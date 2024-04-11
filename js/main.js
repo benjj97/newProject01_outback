@@ -16,17 +16,16 @@ function toggleImg2(){
 }
 
 // 두번째 콘텐츠 숫자 카운터
-
-const numAni = document.getElementById('num_01');
-const numAni2 = document.getElementById('num_02');
-const numAni3 = document.getElementById('num_03');
-let num = 0;
-let num2 = 0;
-let num3 = 0;
-let targetNum = numAni.getAttribute('date-rate'); 
-let targetNum2 = numAni2.getAttribute('date-rate'); 
-let targetNum3 = numAni3.getAttribute('date-rate'); 
-console.log(targetNum);
+// const numAni = document.getElementById('num_01');
+// const numAni2 = document.getElementById('num_02');
+// const numAni3 = document.getElementById('num_03');
+// let num = 0;
+// let num2 = 0;
+// let num3 = 0;
+// let targetNum = 29; 
+// let targetNum2 = 80; 
+// let targetNum3 = 41103663000;
+// console.log(targetNum);
 
 
 let maxScrollValue = document.body.offsetHeight - window.innerHeight;
@@ -44,29 +43,29 @@ function count_animation(){
   
 }
 
-const timer = setInterval(function(){
-  ++num;
-  numAni.innerText =  num;
-  if(num == targetNum){
-    clearInterval(timer);
-  }
-}, 20);
+// const timer = setInterval(function(){
+//   ++num;
+//   numAni.innerText =  num;
+//   if(num == targetNum){
+//     clearInterval(timer);
+//   }
+// }, 1);
 
-const timer2 = setInterval(function(){
-  ++num2;
-  numAni2.innerText =  num2;
-  if(num2 == targetNum2){
-    clearInterval(timer2);
-  }
-}, 20);
+// const timer2 = setInterval(function(){
+//   ++num2;
+//   numAni2.innerText =  num2;
+//   if(num2 == targetNum2){
+//     clearInterval(timer2);
+//   }
+// }, 1);
 
-const timer3 = setInterval(function(){
-  ++num3;
-  numAni3.innerText =  num3;
-  if(num3 == targetNum3){
-    clearInterval(timer3);
-  }
-}, 1);
+// const timer3 = setInterval(function(){
+//   num3 = num3 + 10000000;
+//   numAni3.innerText =  num3;
+//   if(num3 == targetNum3){
+//     clearInterval(timer3);
+//   }
+// }, 0.2);
 
 
 
